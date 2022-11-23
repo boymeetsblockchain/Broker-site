@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <div className='flex flex-1 justify-around mx-32 my-8'>
+    <div className='flex my-8 w-full'>
      <div className="hero-info p-3">
-       <h1 className='text-6xl font-bold'>
+       <h1 className='text-2xl lg:text-6xl font-bold'>
        Diversify your portfolio with a true multi-asset broker
        </h1>
        <p className='text-2xl text-gray-300 my-6'>Forex - Commodities - Bonds - Metals</p>
