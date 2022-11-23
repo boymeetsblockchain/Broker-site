@@ -22,7 +22,9 @@ export const ContextProvider: React.FC<Childern> = ({ children }) => {
 
 
     return (
-        <StateContext.Provider value={{ sidebar, setSidebar}}>
+        <StateContext.Provider value={{ 
+        sidebar, 
+        setSidebar}}>
             {children}
         </StateContext.Provider>
     )

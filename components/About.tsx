@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function AboutComponent() {
   return (
-    <div className="bg-gray-200 mx-20 mt-8 ">
+    <div className="bg-gray-200 mx-20 mt-8 flex flex-1">
       <div className="about-image">
       <Image src={require('/public/images/about.jpg')} alt="about-image" width={400} height={250}/>
       </div>
