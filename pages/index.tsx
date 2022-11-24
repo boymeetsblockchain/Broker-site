@@ -13,7 +13,7 @@ export default function Index() {
     <div className={`flex flex-col relative px-6 ${sidebar? "bg-gray-400" : "bg-gray-100"}`}>
       <Navbar/>
       <Hero/>
-      {/* <About/> */}
+      <About/>
       <Process/>
       <Service/>
     </div>

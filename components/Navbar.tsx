@@ -8,7 +8,7 @@ export default function Navbar() {
   const { sidebar, setSidebar } = useContextState()
 
   return (
-    <div className='sticky top-0 right-0'>
+    <div className='sticky top-0 right-0 bg-gray-100'>
       <nav className='border-b-2 px-2 flex  justify-between items-center relative'>
         <div className="home-logo py-4">
           <h1 className='font-bold text-3xl'><Link href='/'>BROKER SITE</Link> </h1>
