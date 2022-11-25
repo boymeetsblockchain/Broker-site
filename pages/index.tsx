@@ -5,7 +5,7 @@ import Service from "../components/Service"
 import Process from "../components/Process"
 import { useContextState } from "../context/context"
 import Objectives from "../components/Objectives"
-import Sidebar from "../components/sidebar"
+import Testimonial from "../components/Testimonial"
 
 export default function Index() {
   const {sidebar} = useContextState()
@@ -18,6 +18,7 @@ export default function Index() {
       <Process/>
       <Service/>
       <Objectives/>
+      <Testimonial />
     </div>
   )
 }
