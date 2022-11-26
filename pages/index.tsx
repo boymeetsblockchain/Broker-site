@@ -6,6 +6,9 @@ import Process from "../components/Process"
 import { useContextState } from "../context/context"
 import Objectives from "../components/Objectives"
 import Testimonial from "../components/Testimonial"
+import Payment from "../components/Payment"
+import Frequent from "../components/Frequent"
+import Contact from "../components/Contact"
 
 export default function Index() {
   const {sidebar} = useContextState()
@@ -19,6 +22,9 @@ export default function Index() {
       <Service/>
       <Objectives/>
       <Testimonial />
+      <Payment/>
+      <Frequent/>
+      <Contact/>
     </div>
   )
 }
