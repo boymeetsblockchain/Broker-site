@@ -9,7 +9,7 @@ import bank from "../public/images/bank.png"
 
 export default function Payment() {
   return (
-    <div className="flex flex-col justify-center mx-20">
+    <div className="flex flex-col justify-center mx-12 md:mx-20">
       <h1 className="text-center text-gray-600 text-4xl font-semibold my-2">Payment </h1>
       <p className="text-center text-gray-600  text-xl my-2">Wide range of payment options</p>
         <div className="border-gray-200 border-2 px-0 my-10">
