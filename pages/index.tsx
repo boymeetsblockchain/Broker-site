@@ -9,12 +9,15 @@ import Testimonial from "../components/Testimonial"
 import Payment from "../components/Payment"
 import Frequent from "../components/Frequent"
 import Contact from "../components/Contact"
+import Footer from "../components/footer"
+import Whatsapp from "../components/whatsapp"
+import Chat from "../components/chat"
 
 export default function Index() {
   const {sidebar} = useContextState()
 
   return (
-    <div className={`flex flex-col relative px-6 ${sidebar? "bg-gray-400" : "bg-gray-100"}`}>
+    <div className={`flex flex-col pb-10 relative px-6 ${sidebar? "bg-gray-400" : "bg-gray-100"}`}>
       <Navbar/>
       <Hero/>
       <About/>
@@ -25,6 +28,9 @@ export default function Index() {
       <Payment/>
       <Frequent/>
       <Contact/>
+      <Footer />
+      <Whatsapp />
+      <Chat />
     </div>
   )
 }
