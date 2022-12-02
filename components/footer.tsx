@@ -3,14 +3,14 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <div>
-          <div className='md:flex md:items-center md:space-x-6 p-10 pb-20'>
+    <div className='flex flex-col items-center justify-center'>
+          <div className=' flex justify-center items-center  flex-col md:flex md:items-center md:space-x-6 p-10 pb-20'>
               <div className='w-[50%]'>
-                  <h1 className='mb-6 font-bold text-2xl'>Risk Disclaimer</h1>
-                  <p className='text-gray-600'>Trading and investing in digital options involves significant level of risk and is not suitable and/or appropriate for all clients. Please make sure you carefully consider your investment objectives, level of experience and risk appetite before buying or selling any digital option. Buying or selling digital options entails financial risks and could result in a partial or complete loss of your funds, therefore, you should not invest funds you cannot afford to lose.</p>
+                  <h1 className='mb-6 text-center font-bold text-2xl'>Risk Disclaimer</h1>
+                  <p className='text-gray-600 '>Trading and investing in digital options involves significant level of risk and is not suitable and/or appropriate for all clients. Please make sure you carefully consider your investment objectives, level of experience and risk appetite before buying or selling any digital option. Buying or selling digital options entails financial risks and could result in a partial or complete loss of your funds, therefore, you should not invest funds you cannot afford to lose.</p>
               </div>
-              <div className='w-[50%]'>
-                  <h1 className='mb-6 font-bold text-xl'>Useful Links</h1>
+              <div className='w-full mt-4 flex flex-col items-center'>
+                  <h1 className='mb-6 flex flex-col font-bold text-xl'>Useful Links</h1>
                   <ul className=' space-y-3'>
                       <li className=' text-blue-400 flex items-center space-x-1'><MdKeyboardArrowRight /><Link href='/'>Home </Link></li>
                       <li className=' text-blue-400 flex items-center space-x-1'><MdKeyboardArrowRight /><Link href='/login'>Login</Link></li>
