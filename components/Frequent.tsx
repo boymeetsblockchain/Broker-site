@@ -16,7 +16,7 @@ export default function Frequent() {
   }
 
   return (
-    <div className="flex flex-col mx-14 mt-16">
+    <div className="flex flex-col mx-14 md:mx-14 mt-16">
       <h1 className="text-center text-4xl my-4 hover:text-blue-500 cursor-pointer font-semibold">Frequently Asked Questions</h1>
         <ul>
         <li className="my-6">
