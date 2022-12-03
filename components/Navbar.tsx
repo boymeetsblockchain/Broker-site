@@ -17,7 +17,7 @@ export default function Navbar() {
           <ul className='flex justify-between align-center '>
             <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/'>Home </Link></li>
             <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/sign-in'>Login</Link></li>
-            <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/signUp'>SignUp </Link></li>
+            <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/signup'>SignUp </Link></li>
             <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/about'>About us</Link></li>
             <li className='p-4 text-gray-400 font-bold text-l hover:text-blue-400 hover:scale-125'><Link href='/contact'>Contact</Link></li>
           </ul>
