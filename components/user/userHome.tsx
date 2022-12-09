@@ -27,7 +27,7 @@ const UserHome = () => {
     }, [screenSize])
   return (
     <div className={`md:flex relative`}>
-          {userSidebar ? <div className='w-[300px] bg-white fixed md:relative z-20 h-screen'>
+          {userSidebar ? <div className='w-[300px] bg-gray-400 dark:bg-slate-700 fixed md:relative z-20 h-screen'>
             <UserSidebar />
           </div> : <div className='w-0'></div>}
           <div className={`flex-1 ${userSidebar ? "bg-red-600 md:bg-inherit" : ""} w-inherit`}>
