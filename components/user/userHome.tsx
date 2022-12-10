@@ -1,11 +1,21 @@
 import React, { useEffect } from 'react'
 import { useContextState } from '../../context/context'
 import Dashboard from './dashboard'
+import Deposit from './Deposit'
+import Invest from './Invest'
+import Logout from './Logout'
 import NavBar from './navBar'
+import Profile from './Profile'
+import Support from './Support'
+import Trade from './Trade'
 import UserSidebar from './userSidebar'
+import Withdrawal from './Withdrawal'
 
 const UserHome = () => {
-    const { userSidebar, setUserSidebar, screenSize, setScreenSize } = useContextState()
+  const { userSidebar, activeSidebarLink, setUserSidebar, screenSize, setScreenSize } = useContextState()
+
+
+  // const { activeSidebarLink, setActiveSidebarLink } = useContextState()
 
     console.log(userSidebar)
 
@@ -32,7 +42,23 @@ const UserHome = () => {
           </div> : <div className='w-0'></div>}
           <div className={`flex-1 ${userSidebar ? "bg-red-600 md:bg-inherit" : ""} w-inherit`}>
             <NavBar />
-            <Dashboard />
+        {activeSidebarLink === "Dashboard" ? <Dashboard /> : ""}
+        {activeSidebarLink === "Profile" ? <Profile /> : ""}
+        {activeSidebarLink === "Deposit" ? <Deposit /> : ""}
+        {activeSidebarLink === "Trade" ? <Trade /> : ""}
+        {activeSidebarLink === "invest" ? <Invest /> : ""}
+        {activeSidebarLink === "withdrawal" ? <Withdrawal /> : ""}
+        {activeSidebarLink === "support" ? <Support /> : ""}
+        {activeSidebarLink === "logout" ? <Logout /> : ""}
+        
+        
+        
+        
+        
+        
+        
+        
+            
           </div>
     </div>
   )
