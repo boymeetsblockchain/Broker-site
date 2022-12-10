@@ -5,7 +5,10 @@ const Dashboard = () => {
     const { userSidebar, setUserSidebar, screenSize, setScreenSize } = useContextState()
 
   return (
-      <div className='' onClick={() => setUserSidebar(prev => !prev)}>Dashboard</div>
+      <div className='' onClick={() => setUserSidebar(prev => !prev)}>Dashboard
+      
+      
+      </div>
   )
 }
 
