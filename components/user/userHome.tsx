@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { useContextState } from '../../context/context'
+import Chat from '../chat'
+import Footer from '../footer'
+import Whatsapp from '../whatsapp'
 import Dashboard from './dashboard'
 import Deposit from './Deposit'
 import Invest from './Invest'
@@ -42,14 +45,14 @@ const UserHome = () => {
           </div> : <div className='w-0'></div>}
           <div className={`flex-1 ${userSidebar ? "bg-red-600 md:bg-inherit" : ""} w-inherit`}>
             <NavBar />
-        {activeSidebarLink === "Dashboard" ? <Dashboard /> : ""}
-        {activeSidebarLink === "Profile" ? <Profile /> : ""}
-        {activeSidebarLink === "Deposit" ? <Deposit /> : ""}
-        {activeSidebarLink === "Trade" ? <Trade /> : ""}
-        {activeSidebarLink === "invest" ? <Invest /> : ""}
-        {activeSidebarLink === "withdrawal" ? <Withdrawal /> : ""}
-        {activeSidebarLink === "support" ? <Support /> : ""}
-        {activeSidebarLink === "logout" ? <Logout /> : ""}
+            {activeSidebarLink === "Dashboard" ? <Dashboard /> : ""}
+            {activeSidebarLink === "Profile" ? <Profile /> : ""}
+            {activeSidebarLink === "Deposit" ? <Deposit /> : ""}
+            {activeSidebarLink === "Trade" ? <Trade /> : ""}
+            {activeSidebarLink === "invest" ? <Invest /> : ""}
+            {activeSidebarLink === "withdrawal" ? <Withdrawal /> : ""}
+            {activeSidebarLink === "support" ? <Support /> : ""}
+            {activeSidebarLink === "logout" ? <Logout /> : ""}
         
         
         
@@ -60,6 +63,9 @@ const UserHome = () => {
         
             
           </div>
+        <div className='lg:hidden'><Whatsapp /></div>
+        <Chat />
+          {/* <Footer /> */}
     </div>
   )
 }

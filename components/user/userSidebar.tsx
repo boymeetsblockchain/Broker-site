@@ -4,11 +4,12 @@ import { AiFillClockCircle } from "react-icons/ai"
 import { GrMail } from "react-icons/gr"
 import { useContextState } from '../../context/context'
 import { FaCreditCard, FaCashRegister } from 'react-icons/fa'
+import Whatsapp from '../whatsapp'
 
 const UserSidebar = () => {
   const { activeSidebarLink, setActiveSidebarLink } = useContextState()
   return (
-    <div className='bg-slate-400 dark:bg-slate-700 dark:text-white '>
+    <div className='bg-slate-400 dark:bg-slate-700 dark:text-white relative'>
       <div className={`flex items-center cursor-pointer p-4 text-xl space-x-4 ${activeSidebarLink === "Dashboard" ? "border-l-8 border-gray-500 bg-gray-300 dark:bg-gray-700 dark:border-white" : ""}`} onClick={() => setActiveSidebarLink("Dashboard")}>
         <MdHome className="text-2xl"/>
         <h2 className="text-lg">Dashboard</h2>
@@ -38,6 +39,8 @@ const UserSidebar = () => {
         <h2 className="text-lg">Our Support</h2>
       </div>
       <div className={`bg-blue-600 dark:bg-gray-800 p-4 pl-8 cursor-pointer `} onClick={() => setActiveSidebarLink("logout")}>Log Out</div>
+
+      <div className='hidden lg:block'><Whatsapp /></div>
     </div>
   )
 }
